@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./index.css";
-import { Link } from "gatsby";
+import {StaticImage} from "gatsby-plugin-image"
 
 import Layout from '../components/layout'
 
@@ -279,6 +279,8 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <p>I'm making this by following the Gatsby Tutorial.</p>
+      {/*<StaticImage alt="Blogging" src="https://images.unsplash.com/photo-1625123627242-97ef1000c6d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80"/>*/}
+      <StaticImage alt="Owls can sit criss-cross applesauce. My life has improved significantly since finding this out." src="../images/OwlsCanSit.jpg"/>
     </Layout>
   );
 };
