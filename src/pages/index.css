@@ -1,0 +1,241 @@
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.outline {
+    fill: #461c12;
+    transform-origin: 50% 100%;
+    animation: pace 6000ms infinite linear;
+}
+
+.contents {
+    fill: #c77c29;
+    transform: translate(10vmin);
+}
+
+.saucer {
+    fill: hsl(229, 41%, 27%);
+}
+
+.cls-4 {
+    fill: #fff;
+}
+
+.cls-5 {
+    fill: #c77c29;
+}
+
+.cuphandle {
+    fill: hsl(229, 33%, 72%);
+}
+
+
+/* Animation */
+
+@keyframes pace {
+    0% {
+        transform: rotate(0deg);
+        fill: white;
+    }
+    33% {
+        transform: rotate(-1deg);
+        fill: hsl(0, 0%, 32%);
+    }
+    66% {
+        transform: rotate(1deg);
+        fill: hsl(0, 0%, 32%);
+    }
+    100% {
+        transform: translate(0vmin);
+        fill: white;
+    }
+}
+
+@import url("https://use.typekit.net/yyv3vks.css");
+
+/*body {
+    background: #1E1F2F 0% 0% no-repeat padding-box;
+}*/
+
+.container {
+    /* Layout Properties */
+    /* UI Properties */
+    /*background: #1E1F2F 0% 0% no-repeat padding-box;*/
+    background: rgb(30, 31, 47);
+    background: linear-gradient(180deg, rgba(30, 31, 47, 1) 0%, rgba(30, 31, 47, 1) 29%, rgba(31, 100, 179, 1) 100%);
+    opacity: 1;
+    height: 100vh;
+}
+
+.navbar {
+    height: 10vh;
+    background: #A199A6 0% 0% no-repeat padding-box;
+    border-bottom: .5vh solid #413a3f;
+    font-family: calendula, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title1 {
+    font-size: 8vh;
+}
+
+.title2 {
+    font-family: calendula, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 7vh;
+    padding-left: 2vw;
+    color: #f5f5f5;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 1vw;
+    font-family: sans-serif;
+    margin: .5vw 0;
+    font-size: 3vh;
+}
+
+.link {
+    border-radius: .5vw;
+    margin: 0 1vh;
+    display: flex;
+    align-items: center;
+    background-color: #36497E;
+    padding: 0 .5vh;
+    color: #e0e0e0;
+}
+
+.body {
+    margin: 5vw 4vw;
+    padding: 2vw;
+    border: 1px solid skyblue;
+    border-radius: 2vw;
+    opacity: 1;
+    color: white;
+    display: flex;
+}
+
+.fillGreen {
+    /* original fill: #abd4c8;*/
+    fill: #36497E;
+}
+
+.outlineBrown {
+    /* original fill: #461c12;*/
+    fill: #2C56A9;
+}
+
+.fillPink {
+    /*original fill: #f3b8b2;*/
+    fill: #668AED;
+}
+
+.white {
+    fill: #fff;
+}
+
+.steamBrown {
+    fill: #c77c29;
+}
+
+.cheekPink {
+    fill: #f2b7bf;
+}
+
+.coffeecup {
+    transform: translate(40vw, -15vw);
+}
