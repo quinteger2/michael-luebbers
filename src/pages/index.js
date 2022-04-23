@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./index.css";
-import { Link } from "gatsby";
+import {StaticImage} from "gatsby-plugin-image"
 
 import Layout from '../components/layout'
 
@@ -84,6 +84,18 @@ const badgeStyle = {
   lineHeight: 1,
 };
 
+const imageStyle = {
+  
+  display: "block",
+  border: "1rem solid red"
+}
+
+const mainCopyStyle = {
+  display: "flex", 
+  flexDirection: "column",
+  justifyContent: "center"
+}
+
 // data
 const links = [
   {
@@ -130,6 +142,7 @@ const links = [
     color: "#663399",
   },
 ];
+
 
 const CoffeeCup = (props) => {
   return (
@@ -278,29 +291,24 @@ const CoffeeCup = (props) => {
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-    </Layout>
+      <div style={mainCopyStyle}>
+        <p>Hi!</p>
+        <p>I'm Michael Luebbers, a junor React and Gatsby developer with over 10 years of other IT experience. I specialize in front-end development and design, SQL, and integrating graphics with dynamic content.</p><p>Please have a look around for more information about me and to look at my portfolio!</p>
+      <StaticImage
+        className={imageStyle} 
+        alt="Blogging" 
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+        layout="fixed"
+        />
+      {/*<StaticImage alt="Owls can sit criss-cross applesauce. My life has improved significantly since finding this out." src="../images/OwlsCanSit.jpg"/>*/}
+      </div>
+      </Layout>
   );
 };
 
 export default IndexPage;
 
-/*
-    <div className="container">
-      <div className="navbar">
-        <div className="title1">Michael</div>
-        <div className="links">
-          <div className="link">Portfolio</div>
-          <div className="link">Resume</div>
-          <div className="link">Blog</div>
-          <div className="link">Links</div>
-          <div className="link"><Link to="/about">About</Link></div>
-        </div>
-      </div>
-      <div className="title2">Luebbers</div>
-      <div className="body">Contents<CoffeeCup width="30vw" height="30vw"/></div>
-    </div>
-*/
+
 
 /*
     <main style={pageStyles}>

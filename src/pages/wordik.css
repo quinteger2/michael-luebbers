@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+}
+
+.game {
+    position: absolute;
+    display: flex;
+    background: rgb(49, 47, 84);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 99.9vh;
+    width: 99.9vw;
+    flex-direction: column;
+}
+
+.square {
+    border: .2vmin solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2000ms;
+    margin: .5vmin;
+    transform: translate3d(10vmin, 10vmin, -135vmin);
+    border-radius: 10%;
+}
+
+.highlight {
+    background-color: green;
+}
+
+.square-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow {
+    position: absolute;
+}
+
+@keyframes color_change {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+.arrow {
+    width: 10vmin
+}
+
+.goalWords {
+    position: relative;
+    transform: translate(50vmin, 0vmin);
+    font-size: 3vmin;
+    border-radius: 3vmin;
+    border: .3vmin hsl(201, 100%, 58%) solid;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 1) 0%, #8f9dd1 75%, #1f64b3 100%);
+    display: flex;
+    flex-direction: column;
+    line-height: 0em;
+    width: 18vmin;
+    top: -4vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+.goalWords.p {
+    font-family: monospace;
+}
+
+.score {
+    position: relative;
+    font-size: 5vmin;
+    border-radius: 2vmin;
+    padding: .4vmin;
+    border: .3vmin steelblue solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vmin;
+    width: 14vmin;
+    top: 5vmin;
+    left: 10vmin;
+}
+
+.tryAgain {
+    position: relative;
+    transform: translate(30vmin, 0vmin);
+    border-radius: 2vmin;
+    padding: .4vmin;
+    border: .3vmin steelblue solid;
+    background-color: steelblue;
+    color: white;
+    width: 14vmin;
+    height: 3vmin;
+    font-size: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: relative;
+    transform: translate(30vmin, -1vmin);
+    padding: .4vmin;
+    background-color: #ddd;
+    color: steelblue;
+    width: 14vmin;
+    height: 6vmin;
+    font-size: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goback {
+    position: relative;
+    transform: translate(-40vmin, 2vmin);
+    border-radius: 2vmin;
+    padding: .4vmin;
+    color: black;
+    font-size: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    position: relative;
+    transform: translate(50vmin, 65vmin);
+    border-radius: 2vmin;
+    padding: .4vmin;
+    border: .3vmin steelblue solid;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vmin;
+}
+
+.goalWords {
+    position: relative;
+    transform: translate(50vmin, 0vmin);
+    font-size: 3vmin;
+    border-radius: 3vmin;
+    border: .3vmin hsl(201, 100%, 58%) solid;
+    background: linear-gradient(20deg, rgba(255, 255, 255, 1) 0%, #8f9dd1 75%, #1f64b3 100%);
+    display: flex;
+    flex-direction: column;
+    line-height: 0em;
+    width: 18vmin;
+    top: -4vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+.goalWords.p {
+    font-family: monospace;
+}
